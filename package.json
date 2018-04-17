@@ -1,0 +1,35 @@
+{
+  "name": "docauth",
+  "version": "0.0.1",
+  "description": "Document Authenticity on blockchain",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test",
+    "deploy": "truffle migrate --reset",
+    "deploy:rinkeby": "truffle migrate --network=rinkeby --reset",
+    "deploy:mainnet": "truffle migrate --network=mainnet --reset",
+    "watch:client": "watchify -t [babelify] public/js/main.js -o public/dist/bundle.js",
+    "build:client": "browserify -t [babelify] public/js/main.js -o public/dist/bundle.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "arraybuffer-to-buffer": "0.0.4",
+    "dotenv": "^4.0.0",
+    "ethereumjs-abi": "^0.6.4",
+    "ethereumjs-util": "^5.1.2",
+    "moment": "^2.19.1",
+    "promise-wait": "^1.0.0",
+    "truffle-contract": "^3.0.1",
+    "web3-detect-network": "0.0.17"
+  },
+  "devDependencies": {
+    "browserify": "^14.5.0",
+    "buffer": "^5.0.8",
+    "truffle-hdwallet-provider": "git+https://github.com/miguelmota/truffle-hdwallet-provider.git",
+    "watchify": "^3.9.0"
+  }
+}

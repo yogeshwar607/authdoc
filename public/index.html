@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=yes">
+  <title>docauth</title>
+  <link href="/css/style.css" rel="stylesheet">
+  <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="/vendor/web3.min.js"></script>
+  <script type="text/javascript" src="/vendor/truffle-contract.js"></script>
+  <script language="javascript" type="text/javascript" src="/js/docauthabi.js"></script>
+
+  <script language="javascript" type="text/javascript" src="/js/index.js"></script>
+
+</head>
+<body>
+  <header id="header">
+  <h1>DocAuth
+ </h1>
+    <small>Document Authorization on the Ethereum Blockchain</small>
+  </header>
+  <div id="formsContainer">
+    <form id="stampForm">
+      <div class="formTitle">
+        Authorize your Document
+      </div>
+      <div>
+        <label>File <small>Only the hash of the document is retrieved to be stored; the actual contents are never stored anywhere.</small></label>
+        <input type="file" id="stampFile">
+      </div>
+      <div>
+        <label>Hash <small>The hash of the document</small></label>
+        <input type="text" readonly id="stampHash">
+      </div>
+      <div>
+          <label>Author Name</label>
+          <input type="text"  id="authorName">
+      </div>
+      <div>
+          <label>Title</label>
+          <input type="text"  id="title">
+      </div>
+      <div>
+          <label>Email</label>
+          <input type="text"  id="email">
+      </div>
+      <div>
+        <button type="submit">Authorize it!</button>
+        <button id="isExists"> Check for Existence</button>
+      </div><div>
+        <label id="authDocStatus"></label>
+      </div>
+      
+    </form>
+    <form>
+        <div class="formTitle">
+            Get Document Details from author name
+          </div>
+          <div>
+              <label>Enter Author Name </label>
+              <input type="text"  id="authorNameValue">
+          </div>
+          <div>
+            <button id="getDetailsFromAuthorName">Get Doc Details From Author Name</button>
+          </div>
+          <div id="details"></div>
+
+    </form> 
+    <script src="/js/bundle.js"></script>
+
+</body>
+</html>
