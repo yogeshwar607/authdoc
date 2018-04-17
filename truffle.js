@@ -1,9 +1,9 @@
 const HDWalletProvider = require('truffle-hdwallet-provider')
 require('dotenv').config()
 
-const key = process.env.MNEMONIC  || 'stuff omit quiz inform fly sand surface truck truck other olympic sorry'
+const key = process.env.MNEMONIC  
   // 12 word mnemonic 
-const rinkyByUrl = 'https://rinkeby.infura.io/8Ofq8yj9gcP6EVmKD3NG';
+const rinkyByUrl = 'https://rinkeby.infura.io';
 
 module.exports = {
   networks: {
