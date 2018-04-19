@@ -1,4 +1,4 @@
-# docauth
+# Docauth
 
 >  Document Authenticity on the [Ethereum](https://ethereum.org/) blockchain.
 
