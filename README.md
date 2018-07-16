@@ -14,8 +14,7 @@ Run http-server (or any other package you prefer) under public folder
 npm install -g http-server
 http-server public
 ```
- 
-
+Truffle Commands
 ```bash
 npm install -g truffle
 truffle migrate
