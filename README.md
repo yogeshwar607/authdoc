@@ -32,7 +32,14 @@ migrate
 ```bash
 truffle test
 ```
+Configured for rinkeyby testnet
+
 
 # License
 
 MIT
+
+
+`
+stadium since round alpha please slight rigid sun where unfair toddler pledge
+`
